@@ -34,7 +34,12 @@ export function Header() {
 
           {/* Right Actions */}
           <div className="flex items-center space-x-4">
-            <Button variant="ghost" size="sm" className="text-gray-600 hover:text-gray-900">
+            <Button 
+              variant="ghost" 
+              size="sm" 
+              className="text-gray-600 hover:text-gray-900"
+              onClick={() => window.location.hash = 'editor'}
+            >
               <Edit3 className="h-4 w-4 mr-2" />
               Write
             </Button>
